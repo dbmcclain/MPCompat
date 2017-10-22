@@ -21,7 +21,7 @@
    #:make-mailbox
    #:mailbox-empty-p
    )
-  #+:LISPWORKS6
+  #+(or :LISPWORKS6 :LISPWORKS7)
   (:import-from #:mp
    #:mailbox-send
    #:mailbox-read
