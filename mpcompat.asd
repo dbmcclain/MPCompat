@@ -7,7 +7,7 @@
   :components  ((:file "packages")
                 #+:LISPWORKS  (:file "mp-compat-lw")
                 #+:LISPWORKS5 (:file "mp-compat-lw5")
-                #+:LISPWORKS6 (:file "mp-compat-lw6")
+                #+(or :LISPWORKS6 :LISPWORKS7) (:file "mp-compat-lw6")
                 #+:ALLEGRO    (:file "mp-compat-allegro")
                 #+:SBCL       (:file "mp-compat-sbcl")
                 #+:CLOZURE    (:file "mp-compat-clozure")
